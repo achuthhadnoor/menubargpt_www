@@ -7,3 +7,9 @@ body {
   /* background: linear-gradient(to bottom, transparent, #000c0c) #15383d; */
   background: #000c0c;
 }
+
+.gradient-border {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right, #006573, #00ffee);
+}

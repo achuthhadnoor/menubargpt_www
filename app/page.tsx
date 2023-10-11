@@ -91,7 +91,7 @@ export default function Home() {
           </button>
         </span> */}
       </header>
-      <section className="p-4 text-center flex flex-col gap-6 tracking-widest justify-center min-h-[600px] mb-16">
+      <section className=" p-4 text-center flex flex-col gap-6 tracking-widest justify-center min-h-[800px] mb-16">
         <h1 className="mt-24 md:text-6xl text-3xl font-bold bg-gradient-to-b from-cyan-500 to-cyan-900 bg-clip-text text-transparent w-full">
           Superfast chatGPT in menubar
         </h1>
@@ -100,25 +100,25 @@ export default function Home() {
           Conversation from Your Mac's Menubar!`}
         </p>
         <div className="flex justify-center">
-          <button className="p-[1px] bg-gradient-to-r from-cyan-600 to-cyan-950 flex rounded">
-            <span className="bg-gradient-to-r from-cyan-800 to-neutral-950 p-2 rounded flex gap-2">
-              <b>
-                Buy <s className="text-neutral-500">9.99$</s> 3.99$
-              </b>
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.861 4.55483C13.3623 3.95654 13.71 3.13997 13.71 2.31531C13.71 2.20212 13.7019 2.08893 13.6776 2C12.8772 2.03234 11.907 2.5336 11.3249 3.21273C10.8722 3.73017 10.4517 4.55483 10.4517 5.37948C10.4517 5.50884 10.4679 5.63012 10.4841 5.67054C10.5326 5.67863 10.6134 5.6948 10.6943 5.6948C11.4219 5.6948 12.3274 5.2097 12.861 4.55483ZM13.4351 5.86458C12.2223 5.86458 11.2441 6.6003 10.6134 6.6003C9.9424 6.6003 9.06923 5.91309 8.01819 5.91309C6.02122 5.91309 4 7.56241 4 10.667C4 12.6074 4.74381 14.6529 5.67357 15.9707C6.46589 17.0864 7.16119 18 8.15563 18C9.15008 18 9.58666 17.3451 10.8075 17.3451C12.0606 17.3451 12.3355 17.9838 13.4351 17.9838C14.5184 17.9838 15.238 16.9894 15.9171 16.0111C16.6852 14.8873 17.0005 13.7959 17.0167 13.7393C16.952 13.7231 14.8742 12.8742 14.8742 10.5053C14.8742 8.45174 16.5073 7.53007 16.5963 7.4573C15.5291 5.91309 13.8878 5.86458 13.4351 5.86458Z"
-                  fill="#999999"
-                />
-              </svg>
-            </span>
-          </button>
+          <Link href="/#download">
+            <button className="p-[1px] bg-gradient-to-r from-cyan-600 to-cyan-950 flex rounded">
+              <span className="bg-gradient-to-r from-cyan-800 to-neutral-950 p-2 rounded flex gap-2 items-center">
+                Download $3.99
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.861 4.55483C13.3623 3.95654 13.71 3.13997 13.71 2.31531C13.71 2.20212 13.7019 2.08893 13.6776 2C12.8772 2.03234 11.907 2.5336 11.3249 3.21273C10.8722 3.73017 10.4517 4.55483 10.4517 5.37948C10.4517 5.50884 10.4679 5.63012 10.4841 5.67054C10.5326 5.67863 10.6134 5.6948 10.6943 5.6948C11.4219 5.6948 12.3274 5.2097 12.861 4.55483ZM13.4351 5.86458C12.2223 5.86458 11.2441 6.6003 10.6134 6.6003C9.9424 6.6003 9.06923 5.91309 8.01819 5.91309C6.02122 5.91309 4 7.56241 4 10.667C4 12.6074 4.74381 14.6529 5.67357 15.9707C6.46589 17.0864 7.16119 18 8.15563 18C9.15008 18 9.58666 17.3451 10.8075 17.3451C12.0606 17.3451 12.3355 17.9838 13.4351 17.9838C14.5184 17.9838 15.238 16.9894 15.9171 16.0111C16.6852 14.8873 17.0005 13.7959 17.0167 13.7393C16.952 13.7231 14.8742 12.8742 14.8742 10.5053C14.8742 8.45174 16.5073 7.53007 16.5963 7.4573C15.5291 5.91309 13.8878 5.86458 13.4351 5.86458Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </span>
+            </button>
+          </Link>
         </div>
         <div className="items-center mt-8 max-w-3xl mx-auto w-full menubar ring-1 ring-cyan-950 rounded-lg p-2 bg-gradient-to-l from-cyan-950 to-neutral-950 flex justify-between">
           <svg
@@ -175,7 +175,7 @@ export default function Home() {
                   width="24"
                   height="24"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
@@ -209,7 +209,7 @@ export default function Home() {
                   width="15.7507"
                   height="17.25"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
@@ -243,7 +243,7 @@ export default function Home() {
                   width="16.2809"
                   height="16.3594"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
@@ -277,7 +277,7 @@ export default function Home() {
                   width="21.1592"
                   height="17.5078"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
@@ -314,7 +314,7 @@ export default function Home() {
           Access menubarGPT from here
         </p>
       </section>
-      <section className="mt-24 flex flex-col justify-center text-center tracking-wider gap-5">
+      <section className="  flex flex-col justify-center text-center tracking-wider min-h-[500px] my-48 gap-10 mb-40">
         <h2 className="text-4xl">
           Seamlessly Access ChatGPT as an App on Your Mac Menubar!
         </h2>
@@ -324,6 +324,680 @@ export default function Home() {
           AI-powered tool? Look no further! With the ChatGPT Menubar App, you
           can transform the way you interact with ChatGPT on your Mac.
         </p>
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
+            <div>
+              <div className="relative flex items-center justify-center mx-auto">
+                <svg
+                  className="text-blue-100"
+                  width="72"
+                  height="75"
+                  viewBox="0 0 72 75"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
+                </svg>
+                <svg
+                  className="absolute text-blue-600 w-9 h-9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold ">Save Time</h3>
+              <p className="mt-4 text-base text-gray-600">
+                Access from menubar on any app to get solution to any query
+                faster. Auto focus on the textbox to start typing...
+              </p>
+            </div>
+
+            <div>
+              <div className="relative flex items-center justify-center mx-auto">
+                <svg
+                  className="text-orange-100"
+                  width="62"
+                  height="64"
+                  viewBox="0 0 62 64"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z" />
+                </svg>
+                <svg
+                  className="absolute text-orange-600 w-9 h-9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold ">Auto launch</h3>
+              <p className="mt-4 text-base text-gray-600">
+                Launch when you start your macOs, so that it will always be with
+                you.
+              </p>
+            </div>
+
+            <div>
+              <div className="relative flex items-center justify-center mx-auto">
+                <svg
+                  className="text-green-100"
+                  width="66"
+                  height="68"
+                  viewBox="0 0 66 68"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M65.5 30C65.5 50.4345 46.4345 68 26 68C5.56546 68 0 50.4345 0 30C0 9.56546 12.5655 0 33 0C53.4345 0 65.5 9.56546 65.5 30Z" />
+                </svg>
+                <svg
+                  className="absolute text-green-600 w-9 h-9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold ">Always on top</h3>
+              <p className="mt-4 text-base text-gray-600">
+                Allows you to have the window always on top of all the apps,
+                even on fullscreen apps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="  flex flex-col justify-center text-center tracking-wider gap-5 min-h-[500px] mb-40"
+        id="download"
+      >
+        <h2 className="text-4xl">One time payment</h2>
+        <p className="p-2 text-neutral-400 max-w-3xl mx-auto">
+          7-day money back. one year of free updates included.
+        </p>
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-6 mx-auto mt-8 text-center md:max-w-5xl sm:grid-cols-3 md:gap-8 sm:mt-16">
+            <div className="">
+              <div className="relative overflow-hidden ring ring-cyan-800 rounded-md">
+                <div className="absolute hidden top-3 right-3">
+                  <svg
+                    className="w-6 h-6 text-orange-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <div className="px-4 py-5 lg:p-8">
+                  <p className="text-lg font-medium text-gray-500">1 device</p>
+                  <p className="mt-4 text-5xl font-bold ">$3.99</p>
+                  <ul className="flex flex-col mt-8 space-y-1">
+                    <li className="text-base font-medium text-gray-600 lg:text-xl">
+                      Less than $1 a day
+                    </li>
+                    <li className="text-base font-medium text-gray-400 lg:text-xl">
+                      Billed every week
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden  ring ring-cyan-800 rounded-md">
+              <div className="absolute hidden top-3 right-3">
+                <svg
+                  className="w-6 h-6 text-orange-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              <div className="px-4 py-5 lg:p-8">
+                <p className="text-lg font-medium text-gray-500">5 devices</p>
+                <p className="mt-4 text-5xl font-bold ">$19.99</p>
+                <ul className="flex flex-col mt-8 space-y-1">
+                  <li className="text-base font-medium text-gray-600 lg:text-xl">
+                    Less than $5 a week
+                  </li>
+                  <li className="text-base font-medium text-gray-400 lg:text-xl">
+                    Billed every month
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden bg-gradient-to-br from-cyan-600 via-cyan-950 to-black border-2 border-cyan-300 rounded-md shadow">
+              <div className="absolute top-3 right-3">
+                <svg
+                  className="w-6 h-6 text-orange-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              <div className="px-4 py-5 lg:p-8">
+                <p className="text-lg font-medium text-gray-500">lifetime</p>
+                <p className="mt-4 text-5xl font-bold ">$99.99</p>
+                <ul className="flex flex-col mt-8 space-y-1">
+                  <li className="text-base font-medium text-gray-600 lg:text-xl">
+                    Less than $2 a week
+                  </li>
+                  <li className="text-base font-medium text-gray-400 lg:text-xl">
+                    Billed every year
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="text-sm text-gray-400">
+          Prices in USD. VAT may apply. Secure payment via Lemonsqueezy. macOS
+          10.13+ Required.
+        </p>
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16 bg-[#001317] rounded-md">
+            <div className="transition-all duration-200 shadow-lg cursor-pointer ">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold ">
+                  {" "}
+                  How to create an account?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400 rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+
+            <div className="transition-all duration-200 cursor-pointer ">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold ">
+                  {" "}
+                  How can I make payment using Paypal?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+
+            <div className="transition-all duration-200 cursor-pointer ">
+              <div className="">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                >
+                  <span className="flex text-lg font-semibold ">
+                    {" "}
+                    Can I cancel my plan?{" "}
+                  </span>
+
+                  <svg
+                    className="w-6 h-6 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit{" "}
+                    <a
+                      href="#"
+                      title=""
+                      className="text-blue-600 transition-all duration-200 hover:underline"
+                    >
+                      aliqua dolor
+                    </a>{" "}
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="transition-all duration-200 cursor-pointer ">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold ">
+                  {" "}
+                  How can I reach to support?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-gray-600 textbase mt-9">
+            Didn’t find the answer you are looking for?{" "}
+            <a
+              href="#"
+              title=""
+              className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+            >
+              Contact our support
+            </a>
+          </p>
+        </div>
+      </section>
+      <section
+        className="  flex flex-col justify-center text-center tracking-wider gap-5 min-h-[500px] mb-40"
+        id="faq"
+      >
+        <h2 className="text-4xl">FAQ</h2>
+        {/* <p className="p-2 text-neutral-400 max-w-3xl mx-auto">
+          7-day money back. one year of free updates included.
+        </p> */}
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16 bg-[#001317] rounded-md">
+            <div className="transition-all duration-200 shadow-lg cursor-pointer ">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold ">
+                  {" "}
+                  How to create an account?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400 rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+
+            <div className="transition-all duration-200 cursor-pointer ">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold ">
+                  {" "}
+                  How can I make payment using Paypal?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+
+            <div className="transition-all duration-200 cursor-pointer ">
+              <div className="">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                >
+                  <span className="flex text-lg font-semibold ">
+                    {" "}
+                    Can I cancel my plan?{" "}
+                  </span>
+
+                  <svg
+                    className="w-6 h-6 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit{" "}
+                    <a
+                      href="#"
+                      title=""
+                      className="text-blue-600 transition-all duration-200 hover:underline"
+                    >
+                      aliqua dolor
+                    </a>{" "}
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="transition-all duration-200 cursor-pointer ">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold ">
+                  {" "}
+                  How can I reach to support?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-gray-600 textbase mt-9">
+            Didn’t find the answer you are looking for?{" "}
+            <a
+              href="#"
+              title=""
+              className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+            >
+              Contact our support
+            </a>
+          </p>
+        </div>
+      </section>
+      <section
+        className="  flex flex-col items-center justify-center text-center tracking-wider gap-5 min-h-[500px] mb-24 "
+        id="download"
+      >
+        <span>
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="44"
+              height="44"
+              rx="10"
+              fill="url(#paint0_linear_6535_66)"
+            />
+            <circle cx="22" cy="22" r="12" fill="url(#paint1_linear_6535_66)" />
+            <rect
+              x="0.5"
+              y="0.5"
+              width="43"
+              height="43"
+              rx="9.5"
+              stroke="url(#paint2_linear_6535_66)"
+              stroke-opacity="0.2"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_6535_66"
+                x1="22"
+                y1="0"
+                x2="22"
+                y2="44"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#002426" />
+                <stop offset="1" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_6535_66"
+                x1="22"
+                y1="10"
+                x2="22"
+                y2="34"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#008787" />
+                <stop offset="1" stopColor="#010707" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_6535_66"
+                x1="22"
+                y1="0"
+                x2="22"
+                y2="44"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#017C7C" />
+                <stop offset="1" stopColor="#187D77" stopOpacity="0.41" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <h2 className="text-3xl font-bold">MenubarGPT</h2>
+        <p>Screen recording without editing into time-lapse videos</p>
+        <Link href="/#download">
+          <button className="p-[1px] bg-gradient-to-r from-cyan-600 to-cyan-950 flex rounded">
+            <span className="bg-gradient-to-r from-cyan-800 to-neutral-950 p-2 rounded flex gap-2 items-center">
+              Download $3.99
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.861 4.55483C13.3623 3.95654 13.71 3.13997 13.71 2.31531C13.71 2.20212 13.7019 2.08893 13.6776 2C12.8772 2.03234 11.907 2.5336 11.3249 3.21273C10.8722 3.73017 10.4517 4.55483 10.4517 5.37948C10.4517 5.50884 10.4679 5.63012 10.4841 5.67054C10.5326 5.67863 10.6134 5.6948 10.6943 5.6948C11.4219 5.6948 12.3274 5.2097 12.861 4.55483ZM13.4351 5.86458C12.2223 5.86458 11.2441 6.6003 10.6134 6.6003C9.9424 6.6003 9.06923 5.91309 8.01819 5.91309C6.02122 5.91309 4 7.56241 4 10.667C4 12.6074 4.74381 14.6529 5.67357 15.9707C6.46589 17.0864 7.16119 18 8.15563 18C9.15008 18 9.58666 17.3451 10.8075 17.3451C12.0606 17.3451 12.3355 17.9838 13.4351 17.9838C14.5184 17.9838 15.238 16.9894 15.9171 16.0111C16.6852 14.8873 17.0005 13.7959 17.0167 13.7393C16.952 13.7231 14.8742 12.8742 14.8742 10.5053C14.8742 8.45174 16.5073 7.53007 16.5963 7.4573C15.5291 5.91309 13.8878 5.86458 13.4351 5.86458Z"
+                  fill="#999999"
+                />
+              </svg>
+            </span>
+          </button>
+        </Link>
+        <p>
+          Become an <Link href="/affiliate">affiliate</Link>
+          <Link href="changelog">Changelog</Link>
+        </p>
+        <p>Made by Achuth Hadnoor. All rights reserved</p>
       </section>
     </main>
   );
