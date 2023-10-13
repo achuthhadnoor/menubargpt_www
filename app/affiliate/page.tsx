@@ -1,9 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Affiliate() {
   return (
-    <main className="min-h-screen max-w-6xl mx-auto leading-loose gap-5 py-16">
-      <button className="rounded-full px-4 py-2 bg-gray-800">← Back</button>
+    <main className="min-h-screen max-w-6xl mx-auto leading-loose gap-5 py-16 p-4">
+      <Link href="/">
+        <button className="rounded-full px-4 py-2 bg-gray-800">← Back</button>
+      </Link>
       <div className="text-center flex flex-col gap-4">
         <h1 className="mt-24 md:text-6xl text-3xl font-bold w-full">
           Become an affiliate & earn up to $14.85 on each sale!
@@ -44,9 +47,9 @@ export default function Affiliate() {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
@@ -85,9 +88,9 @@ export default function Affiliate() {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
@@ -127,9 +130,9 @@ export default function Affiliate() {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
@@ -170,9 +173,9 @@ export default function Affiliate() {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
